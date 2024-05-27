@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+% set the font
+\usepackage[T1]{fontenc}
+\usepackage{fouriernc}
+% set spacing for section titling
+\usepackage{setspace}
+% Make sure you can use accents
+%\usepackage[spanish]{babel}
+% set the margins
+\usepackage[margin=.6in]{geometry}
+% Adjust title and section spacing
+\usepackage{titling}
+\usepackage{titlesec}
+\setlength{\droptitle}{-10em}
+% before and after sections
+\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{-5pt plus 2pt minus 2pt}
+% Fix the spacing with itemize
+\usepackage{enumitem}
+\newenvironment{customitemize}
+{ \begin{itemize}[leftmargin=\parindent, topsep = 1pt, itemsep = -1pt] }
+{\end{itemize} }
+\usepackage{bibentry}
+
+\usepackage{hyperref}
+
+\usepackage[dvipsnames]{color}
+
+% For my citations
+\usepackage[round]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{comment}
+\begin{comment}
+\addbibresource{cv_bib.bib}
+\end{comment}
+
+\usepackage{bibentry}
+\nobibliography*
+
+\makeatletter
+\let\old@rule\@rule
+\def\@rule[#1]#2#3{\textcolor{rulecolor}{\old@rule[#1]{#2}{#3}}}
+\makeatother
+\definecolor{rulecolor}{named}{Black}
+
+\begin{document}
+\normalsize
+\singlespacing
+
+
+
+\section*{\centering \sc{Peter Deffebach}} 
+\begin{center}
+\rule{3in}{1pt} \\
+\vspace*{0.1in}
+
+\begin{minipage}[t]{3in}
+\textbf{Contact information:} \\
+\texttt{peterwd@bu.edu} \\
+503-853-6255 \\
+\href{https://scholar.google.com/citations?user=zMlunv0AAAAJ&hl=en}{Google Scholar} \\
+Website \\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.0in}
+\textbf{Address:}\\
+Boston University \\
+Department of Economics \\
+270 Bay State Road, \\
+Boston, MA 0221
+\end{minipage}
+
+\end{center} 
+
+\section*{\sc{Education}}
+\noindent \rule{\textwidth}{1pt} 
+\noindent {\textbf{Boston University}, Boston, MA}  \hfill 2019-present 
+\begin{customitemize}
+	\item Masters in Economics (2022)
+	\item PhD in Economics (in progress)
+\end{customitemize}
+\noindent {\textbf{Princeton University}, Princeton, NJ}  \hfill 2013-2017 
+\begin{customitemize}
+	\item AB in Economics (\emph{cum laude}); Minor in Spanish
+\end{customitemize}
+
+\section*{\sc{Fields of interest}}
+\noindent \rule{\textwidth}{1pt} 
+
+\begin{customitemize}
+	\item Macroeconomics of Development, Urban Economics, Labor Economics
+\end{customitemize}
+
+
+\section*{\sc{Published Papers}}
+\noindent \rule{\textwidth}{1pt} 
+\begin{customitemize}
+	\item \bibentry{mexico}
+\end{customitemize}
+
+\section*{\sc{Working Papers}}
+\noindent \rule{\textwidth}{1pt} 
+
+\section*{\sc{Works in Progress}}
+\noindent \rule{\textwidth}{1pt} 
+\begin{customitemize}
+	\item Quits in an Low-Income Urban Labor Market: Evidence from Ghana (Job Market Paper)
+	\item Economic Development and the Spatial Distribution of Income in Cities, with David Lagakos, Yuhei Miyauchi, and Eiji Yamada
+\end{customitemize}
+
+\section*{\sc{Research Grants}}
+\noindent \rule{\textwidth}{1pt} 
+
+\begin{customitemize}
+	\item International Growth Centre (IGC) Small Research Grant (\textsterling 20,000) \hfill 2022
+	\item Structural Change and Economic Growth (STEG) Small Research Grant (\textsterling 15,000) \hfill 2023
+	\item International Growth Centre (IGC) Full Research Grant (\textsterling 44,000) \hfill 2023
+\end{customitemize}
+
+
+\nobibliography{cv_bib}
+
+\end{document}

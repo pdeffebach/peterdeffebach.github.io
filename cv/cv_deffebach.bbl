@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Davies et~al.(2024)Davies, Deffebach, Iacovone, and McKenzie]{mexico}
+Elwyn Davies, Peter Deffebach, Leonardo Iacovone, and David McKenzie.
+\newblock Training microentrepreneurs over zoom: Experimental evidence from
+  mexico.
+\newblock \emph{Journal of Development Economics}, 167, 2024.
+\newblock URL \url{https://doi.org/10.1016/j.jdeveco.2023.103244}.
+
+\end{thebibliography}
